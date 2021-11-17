@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto+Mono:ital,wght@0,100;1,300;1,400;1,600&display=swap');
+:root {
+    --color-darkgrey: rgb(51, 51, 51);
+    --color-black: rgb(0, 0, 0);
+    --color-beige: rgb(236, 236, 230);
+    --color-black2: rgb(24, 24, 24);
+    --color-blue: rgb(19, 19, 175);
+    --color-white: rgb(255, 255, 255);
+    --shadow-1: rgb(0 0 0 / 35%) 0px 8px 24px;
+    --shadow-2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --font-family-title: 'Dancing Script', cursive;
+    --font-family-1: 'Roboto Mono', monospace;
+    --font-size-1: 1rem;
+    --font-size-2: 1.2rem;
+    --font-size-3: 1.8rem;
+    --border-radius-1: .25rem;
+    --border-radius-2: .5rem;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-beige);
+    font-size: var(--font-size-1);
+    color: var(--color-black);
+}
+
+input,
+button {
+    cursor: pointer;
+    font-family: var(--font-family-1);
+}
+
+button:disabled {
+    opacity: .5;
+}

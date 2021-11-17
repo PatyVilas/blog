@@ -1,0 +1,6 @@
+.menu-container {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-black2);
+    color: var(--color-beige);
+}

@@ -1,0 +1,8 @@
+.list-container {
+    margin: 100px auto;
+    padding: 1rem;
+    max-width: max-content;
+    background-color: var(--color-beige);
+    border: solid 2px var(--color-black2);
+    border-radius: var(--border-radius-1);
+}

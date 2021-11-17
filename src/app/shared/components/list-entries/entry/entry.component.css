@@ -1,0 +1,13 @@
+.entry-container {
+    background-color: var(--color-white);
+    min-width: 800px;
+    text-align: center;
+    border-radius: var(--border-radius-2);
+}
+
+.entry-title {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-3);
+}
+
+.entry-summary {}
