@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Entry } from '../../interfaces/entry';
+import { Entry } from 'src/app/shared/interfaces/entry';
 
 @Component({
   selector: 'app-list-entries',

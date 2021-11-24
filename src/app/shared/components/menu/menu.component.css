@@ -1,6 +1,33 @@
 .menu-container {
     margin: 0;
-    padding: 0;
+    padding: .5rem;
     background-color: var(--color-black2);
     color: var(--color-beige);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list {
+    margin: 0 1rem;
+    padding: .2rem;
+    display: inline-flex;
+    list-style: none;
+}
+
+.menu-links {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.menu-list-icons {
+    margin: 0 1rem;
+    padding: .2rem;
+}
+
+.menu-icon {
+    max-width: 20px;
+    margin: 0 .25rem;
+    cursor: pointer;
 }

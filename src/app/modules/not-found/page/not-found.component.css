@@ -1,0 +1,16 @@
+.notfound-container {
+    margin: 5rem auto;
+    width: max-content;
+    background-color: var(--color-beige);
+    color: var(--color-black2);
+    border: 5px solid var(--color-black2);
+    border-radius: var(--border-radius-1);
+}
+
+.notfound {
+    margin: 0 1rem;
+    padding: 0 2rem;
+    display: flex;
+    font-size: 10rem;
+    justify-content: center;
+}

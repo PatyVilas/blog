@@ -4,16 +4,19 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomePageComponent } from './page/home-page.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-
+import { ListEntriesComponent } from './components/list-entries/list-entries.component';
+import { EntryComponent } from './components/list-entries/entry/entry.component';
 
 @NgModule({
   declarations: [
-    HomePageComponent
+    HomePageComponent,
+    ListEntriesComponent,
+    EntryComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SharedModule,
+    SharedModule
   ]
 })
 export class HomeModule { }
