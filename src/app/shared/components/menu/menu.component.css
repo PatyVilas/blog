@@ -11,13 +11,27 @@
 
 .menu-list {
     margin: 0 1rem;
-    padding: .2rem;
     display: inline-flex;
     list-style: none;
 }
 
+.logo {
+    display: flex;
+    padding: 0;
+    color: var(--color-violet);
+}
+
+.logo-img {
+    margin: 0;
+    padding: 0;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+
 .menu-links {
     margin: 0 1rem;
+    padding: .25rem;
     cursor: pointer;
 }
 

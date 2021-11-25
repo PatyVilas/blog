@@ -1,0 +1,6 @@
+.about-container {
+    margin: 5rem auto;
+    width: max-content;
+    text-align: center;
+    box-shadow: var(--shadow-2);
+}

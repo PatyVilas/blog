@@ -1,3 +1,3 @@
 <div class="list-container">
-    <app-entry *ngFor="let entry of listEntries" [entry]="entry"></app-entry>
+    <app-entry *ngFor="let entry of listEntries" [entry]="entry" (onDoEvent)="showEntry($event)"></app-entry>
 </div>

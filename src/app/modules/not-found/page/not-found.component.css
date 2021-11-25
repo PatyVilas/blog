@@ -5,6 +5,7 @@
     color: var(--color-black2);
     border: 5px solid var(--color-black2);
     border-radius: var(--border-radius-1);
+    box-shadow: var(--shadow-1);
 }
 
 .notfound {

@@ -1,0 +1,55 @@
+.form-container {
+    margin: 4rem auto;
+    width: max-content;
+    box-shadow: var(--shadow-2);
+    text-align: center;
+}
+
+.form-title {
+    margin: auto;
+    padding: 1rem 4rem;
+    background-color: var(--color-black2);
+    color: var(--color-beige);
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-3);
+}
+
+.form {
+    margin: auto;
+    padding: 1rem;
+    width: min-content;
+    font-family: var(--font-family-1);
+    text-align: center;
+}
+
+.form-input {
+    margin: 1rem;
+    padding: 1rem 4rem;
+    border-radius: var(--border-radius-2);
+    border: none;
+}
+
+.login {
+    margin: 2rem;
+    padding: 1rem 8rem;
+    background-color: var(--color-black);
+    color: var(--color-beige);
+    border-radius: var(--border-radius-2);
+    border: none;
+    font-weight: 600;
+}
+
+.google-icon {
+    width: 1.1rem;
+    position: relative;
+    left: 4rem;
+    top: .3rem
+}
+
+.alert {
+    color: var(--color-red);
+    text-align: center;
+    font-weight: 700;
+    width: 90%;
+    margin: 1rem;
+}

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Entry } from 'src/app/shared/interfaces/entry';
 
 @Component({
@@ -10,15 +10,27 @@ export class EntryComponent implements OnInit {
 
   @Input()
   public entry: Entry;
+  @Output()
+  public onDoEvent: EventEmitter<number>;
 
   constructor() { 
     this.entry = {
+      id: 0,
+      userId: 0,
       title:'',
-      summary: ''
+      body: '',
+      author: '',
+      date: '',
+      photo:''
     }
+    this.onDoEvent = new EventEmitter<number>();
   }
 
   ngOnInit(): void {
+  }
+
+  public doEvent(): void {
+    this.onDoEvent.emit(this.entry.id)
   }
 
 }

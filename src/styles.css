@@ -5,7 +5,9 @@
     --color-beige: rgb(236, 236, 230);
     --color-black2: rgb(24, 24, 24);
     --color-blue: rgb(19, 19, 175);
+    --color-violet: rgb(206, 24, 206);
     --color-white: rgb(255, 255, 255);
+    --color-red: rgb(255, 0, 0);
     --shadow-1: rgb(0 0 0 / 35%) 0px 8px 24px;
     --shadow-2: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     --font-family-title: 'Dancing Script', cursive;

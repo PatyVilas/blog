@@ -1,4 +1,9 @@
-<div class="entry-container">
-    <h4 class="entry-title"> {{ entry.title }} </h4>
-    <p class="entry-summary"> {{ entry.summary}} </p>
+<div id="entry" class="entry-container" (click)="doEvent()">
+    <h3 class="entry-title"> {{ entry.title }} </h3>
+    <img src={{entry.photo}} alt="photo" class="entry-photo">
+    <p class="entry-body"> {{ entry.body}} </p>
+    <span class="entry-author">
+        {{entry.author}} {{entry.userId}}
+    </span>
+    <span class="entry-date">{{entry.date}}</span>
 </div>

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 import { Entry } from 'src/app/shared/interfaces/entry';
+import { EntryService } from './../../../../shared/services/entry.service';
 
 @Component({
   selector: 'app-list-entries',
@@ -10,24 +13,27 @@ export class ListEntriesComponent implements OnInit {
 
   public listEntries: Entry[];
 
-  constructor() {
-    this.listEntries = [
-      {
-        title: 'Introduction to Angular',
-        summary: 'In this lesson we will make a short introduction to Angular'
-      },
-      {
-        title: 'Typescript language for Angular',
-        summary: 'Short tour of the Typescript language as a basis for Angular'
-      },
-      {
-        title: 'Components in Angular',
-        summary: 'You will learn to use the components in Angular'
-      },
-    ]
+  constructor(private entryService: EntryService, private router: Router) {
+    this.listEntries = []
    }
 
   ngOnInit(): void {
+    this.toListEntries();
   }
 
+  private toListEntries(): void {
+    this.entryService.recoverEntries().subscribe((entries: Entry[]) => {
+      this.listEntries = [...entries]
+    },
+      (error: Error) => {
+      console.log('Error:', error);
+      },
+      () => {
+      console.log('Response ok');
+    })
+  }
+
+  public showEntry(id: number): void {
+    this.router.navigate([`entry-detail/:${id}`]);
+  }
 }

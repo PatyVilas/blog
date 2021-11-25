@@ -1,0 +1,28 @@
+<app-menu></app-menu>
+<div class="form-container">
+    <h2 class="form-title">Thinking Blog Log In</h2>
+    <form (ngSubmit)="submit()" class="form" #userForm="ngForm">
+        <span>
+            <img src="../../../../assets/img/google.png" alt="google-icon" class="google-icon">
+            <input type="text" value="Log in with Google" class="form-input">
+        </span>
+        <br>or
+        <br>
+        <label for="userName"></label>
+        <input type="text" [(ngModel)]="user.userName" name="userName" #userName="ngModel" placeholder="User" class="form-input" required>
+        <div *ngIf="userName.invalid && userName.dirty" class="alert">
+            <div *ngIf="userName.errors?.required" class="alert">Required Field</div>
+        </div>
+
+        <label for="password"></label>
+        <input type="text" [(ngModel)]="user.password" name="password" #password="ngModel" placeholder="Password" class="form-input" required minlength="4">
+        <div *ngIf="password.invalid && password.dirty">
+            <div *ngIf="password.errors?.required" class="alert">Required field</div>
+            <div *ngIf="password.errors?.minlength" class="alert">4 characters minimum</div>
+        </div>
+
+        <button type="submit" [disabled]="!userForm.form.valid" class="login">LogIn</button>
+        <p>Forgot password?</p>
+        <span>No account? Create one</span>
+    </form>
+</div>
