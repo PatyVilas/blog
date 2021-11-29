@@ -43,5 +43,4 @@ export class EntryDetailComponent implements OnInit {
       }
     )
   }
-
 }

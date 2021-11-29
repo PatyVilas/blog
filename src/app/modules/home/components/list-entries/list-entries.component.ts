@@ -34,6 +34,6 @@ export class ListEntriesComponent implements OnInit {
   }
 
   public showEntry(id: number): void {
-    this.router.navigate([`entry-detail/:${id}`]);
+    this.router.navigate([`entry-detail/${id}`]);
   }
 }

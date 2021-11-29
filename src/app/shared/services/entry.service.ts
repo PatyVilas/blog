@@ -29,8 +29,8 @@ export class EntryService {
           photo: ''
         }
         entries.forEach((entryList: Entry) => {
-          if (entryList.id === id) {
-            entry === entryList;
+          if (entryList.id == id) {
+            entry = entryList;
           }
         })
         return entry;

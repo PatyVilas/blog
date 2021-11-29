@@ -1,8 +1,8 @@
 <app-menu></app-menu>
-<div>
-    <h3>titulo entrada</h3>
-    <img src="" alt="">
-    <p>Body</p>
-    <p>Author</p>
-    <p>Date</p>
+<div class="entry-container">
+    <h3 class="entry-title">{{entry.title}}</h3>
+    <p class="entry-date"> - {{entry.date}} -</p>
+    <img src={{entry.photo}} alt="entry-img" class="entry-img">
+    <p class="entry-body">{{entry.body}}</p>
+    <p class="entry-author">{{entry.author}} {{entry.userId}}</p>
 </div>

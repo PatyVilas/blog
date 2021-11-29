@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+
 import { Entry } from 'src/app/shared/interfaces/entry';
 
 @Component({
@@ -15,8 +16,8 @@ export class EntryComponent implements OnInit {
 
   constructor() { 
     this.entry = {
-      id: 0,
-      userId: 0,
+      id: 1,
+      userId: 1,
       title:'',
       body: '',
       author: '',

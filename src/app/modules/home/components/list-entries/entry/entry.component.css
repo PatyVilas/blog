@@ -1,5 +1,5 @@
 .entry-container {
-    max-width: 50rem;
+    max-width: 60rem;
     padding-bottom: 1rem;
     background-color: var(--color-white);
     text-align: center;
@@ -16,7 +16,8 @@
 }
 
 .entry-photo {
-    width: 700px;
+    width: 800px;
+    max-width: calc(90%);
     max-height: 300px;
     box-shadow: var(--shadow-1);
 }
